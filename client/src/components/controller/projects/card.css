@@ -1,0 +1,41 @@
+.card {
+  display: flex;
+  border: 1px solid rgb(194, 194, 194);
+  justify-content: center;
+  background-color: aliceblue;
+  border-radius: 20px;
+}
+.card_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3% 0px;
+}
+
+.card_box img {
+  object-fit: contain;
+  width: 100%;
+  padding: 0px 2%;
+  border-radius: 20px;
+  border-bottom: 3px solid rgb(117, 117, 117);
+  border-top: 3px solid rgb(117, 117, 117);
+}
+
+.card_title {
+  text-transform: capitalize;
+  color: #8a2be2;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.curd {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.curd div {
+  margin: 1% 5%;
+  cursor: pointer;
+}

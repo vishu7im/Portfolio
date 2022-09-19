@@ -1,0 +1,47 @@
+.Skills_heading {
+  padding: 3%;
+  display: flex;
+  font-size: 50px;
+  font-weight: 900;
+  font-family: fantasy;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: blueviolet;
+}
+
+.skills {
+  text-transform: capitalize;
+}
+
+.sectionFlex {
+  display: flex;
+  justify-content: center;
+}
+.skillSection {
+  padding: 0px 10%;
+  margin-bottom: 3%;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 900;
+  width: 80vw;
+  color: blueviolet;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.skillSection h1 {
+  margin-bottom: 1%;
+}
+@media screen and (max-width: 500px) {
+  .skillSection {
+    padding: 0px 0px;
+    margin-bottom: 8%;
+  }
+
+  .skill_container {
+    height: 70vh;
+  }
+
+  .Skills_heading {
+    padding: 5%;
+  }
+}

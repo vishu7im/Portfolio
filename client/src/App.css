@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: blueviolet;
+}
+
+.active p {
+  color: cyan;
+}
+
+.tab_container {
+  height: calc(100vh - 100px);
+  background-color: rgba(143, 129, 145, 0.63);
+  overflow-y: scroll;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}

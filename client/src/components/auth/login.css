@@ -1,0 +1,93 @@
+.logincontainer {
+  height: calc(100vh - 100px);
+  background-color: #1b163a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginbox {
+  width: 50vh;
+  height: 72vh;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(20, 20, 20);
+  border-radius: 20px;
+  background: #191919;
+  text-align: center;
+  padding: 2%;
+}
+
+.heading {
+  color: cyan;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  margin: 5% 2px;
+}
+
+.inputfeild {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inputfeild p {
+  color: red !important;
+  font-family: cursive;
+}
+.inputfeild input[type="text"],
+.inputfeild input[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  text-align: center;
+  border: 2px solid #3498db;
+  outline: none;
+  color: white;
+  height: 50px;
+  width: 80%;
+  margin: 5% 0px;
+  border-radius: 24px;
+  transition: 0.25s;
+  font-size: 20px;
+  padding: 2%;
+}
+
+.inputfeild input[type="text"]:focus,
+.inputfeild input[type="password"]:focus {
+  border-color: #2ecc71;
+  width: 90%;
+  color: cyan;
+}
+.lbtn {
+  margin: 5% 1px;
+}
+.box button {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  width: 80%;
+  height: 50px;
+  text-align: center;
+  border: 2px solid #2ecc71;
+  outline: none;
+  color: cyan;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.box button:hover {
+  background: cyan;
+  color: black;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 500px) {
+}

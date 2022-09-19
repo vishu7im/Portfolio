@@ -1,0 +1,162 @@
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+.body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  background-color: white;
+}
+.clear {
+  clear: both;
+}
+.container_about {
+  background: white;
+  max-width: 920px;
+  margin: 3% auto;
+  transform: translateY(15%);
+  /* box-shadow: 0px 0px 6px 0px #22222273; */
+}
+.circles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.circles:before {
+  content: "";
+  position: absolute;
+  left: -6%;
+  top: -8%;
+  width: 200px;
+  height: 200px;
+  background: cyan;
+  border-radius: 50%;
+}
+
+.circles:after {
+  content: "";
+  position: absolute;
+  right: -11%;
+  bottom: -15%;
+  width: 200px;
+  height: 200px;
+  background: cyan;
+  border-radius: 50%;
+  z-index: -5;
+}
+
+.details-container {
+  display: flex;
+}
+.avatar {
+  margin: 0px auto;
+  z-index: 1;
+  padding: 20px;
+}
+
+.avatar img {
+  max-width: 240px;
+  margin-top: -70px;
+  border: 10px solid white;
+  box-shadow: 0px 0px 6px 0px #22222273;
+}
+
+.about {
+  float: right;
+  padding: 20px;
+  margin-top: 40px;
+
+  margin-right: 70px;
+}
+
+.name p {
+  margin: 0;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.name h1 {
+  color: cyan;
+  font-weight: bold;
+  margin: 0;
+  font-size: 3em;
+}
+
+.about-content p {
+  line-height: 1.6em;
+  z-index: 2;
+}
+.about-content button {
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-weight: 900;
+  background: cyan;
+  cursor: pointer;
+  font-size: 15px;
+  width: 250px;
+  height: 40px;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 1px 1px 10px 0px #2222222b;
+  transition: 0.2s all;
+}
+.about_btn:hover {
+  background: purple;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 766px) {
+  .circles:after {
+    display: none;
+  }
+  .container_about {
+    margin: -30% auto;
+    border-bottom: none;
+    box-shadow: 0px 0px 0px 0px #ffffff73;
+  }
+  .details-container {
+    flex-direction: column;
+  }
+
+  .avatar img {
+    width: 300px;
+    margin-top: 0px;
+  }
+
+  .about {
+    margin-top: 10px;
+    margin-right: 1px;
+  }
+  .body {
+    background-color: white;
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideUpFromBottom {
+  0% {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
