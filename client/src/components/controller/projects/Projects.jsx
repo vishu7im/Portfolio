@@ -95,7 +95,7 @@ export default function Projects() {
       <div className="form">
         <div className="form_box">
           <div class="segment skillSection">
-            <h1> project</h1>
+            <h1>project</h1>
           </div>
 
           <label className={"lable"}>

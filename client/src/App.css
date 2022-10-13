@@ -19,11 +19,33 @@
   background-color: rgba(143, 129, 145, 0.63);
   overflow-y: scroll;
 }
-
+.tost {
+  height: 100vh;
+}
 .skills-container {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   position: relative;
   z-index: 1;
+}
+
+.animate-charcter {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #ff00ea 0%,
+    #47c5ec 29%,
+    #00ff15 67%,
+    #7bff00 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
 }

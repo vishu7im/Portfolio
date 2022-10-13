@@ -37,7 +37,7 @@ export default function About() {
                 <div className="about">
                   <div className="name">
                     <p>Hello There!</p>
-                    <h1>I'm vishal</h1>
+                    <h2>I'm vishal,</h2>
                   </div>
                   <div className="about-content">
                     <p>
@@ -52,7 +52,7 @@ export default function About() {
                       <br />
                       Think I’m the perfect fit for your project? <br /> Just
                       send me a message. Thanks for reading, and I look forward
-                      to (hopefully) working with you!
+                      to (hopefully) working with you
                     </p>
                   </div>
                 </div>

@@ -97,13 +97,8 @@ export default function Home() {
         </div>
         <div className="scroll">
           <div className="scroll_in">
-            <div class="waviy">
-              <span>S</span>
-              <span>C</span>
-              <span>R</span>
-              <span>O</span>
-              <span>L</span>
-              <span>L</span>
+            <div class="waviy ">
+              <span className=" animate-charcter">Scroll</span>
             </div>
 
             <ArrowDownwardSharp />

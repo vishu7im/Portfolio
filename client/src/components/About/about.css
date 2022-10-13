@@ -76,11 +76,12 @@
   font-size: 1.1em;
   font-weight: bold;
 }
-.name h1 {
-  color: cyan;
+.name h2 {
+  color: rgb(43, 255, 0);
   font-weight: bold;
   margin: 0;
-  font-size: 3em;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
 }
 
 .about-content p {

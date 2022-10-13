@@ -17,7 +17,10 @@ export default function SingleProject({ title, skill, git, demo, img }) {
               <a href={demo} target={"_blank"}>
                 <img src={img} alt="" />
               </a>
-              <span className="clickme">Click Me</span>
+              <a href={demo} target={"_blank"}>
+                {" "}
+                <span className="clickme">Click Me</span>{" "}
+              </a>
             </div>
             <div className="open_skills ">
               <h1 className="text_title">

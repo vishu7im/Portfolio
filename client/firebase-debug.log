@@ -1,0 +1,90 @@
+[debug] [2022-09-23T12:10:57.771Z] ----------------------------------------------------------------------
+[debug] [2022-09-23T12:10:57.773Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\vishal\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2022-09-23T12:10:57.774Z] CLI Version:   11.8.1
+[debug] [2022-09-23T12:10:57.774Z] Platform:      win32
+[debug] [2022-09-23T12:10:57.774Z] Node Version:  v16.17.0
+[debug] [2022-09-23T12:10:57.775Z] Time:          Fri Sep 23 2022 17:40:57 GMT+0530 (India Standard Time)
+[debug] [2022-09-23T12:10:57.776Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-23T12:10:57.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-23T12:10:57.856Z] > authorizing via signed-in user (vishu.im.0007@gmail.com)
+[debug] [2022-09-23T12:10:57.857Z] [iam] checking project vishal-munday-protfolio for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-09-23T12:10:57.859Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishal-munday-protfolio:testIamPermissions [none]
+[debug] [2022-09-23T12:10:57.860Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishal-munday-protfolio:testIamPermissions x-goog-quota-user=projects/vishal-munday-protfolio
+[debug] [2022-09-23T12:10:57.860Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishal-munday-protfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-23T12:11:03.022Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishal-munday-protfolio:testIamPermissions 200
+[debug] [2022-09-23T12:11:03.022Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/vishal-munday-protfolio:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-09-23T12:11:03.025Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vishal-munday-protfolio [none]
+[debug] [2022-09-23T12:11:04.105Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vishal-munday-protfolio 200
+[debug] [2022-09-23T12:11:04.106Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vishal-munday-protfolio {"projectId":"vishal-munday-protfolio","projectNumber":"965337335375","displayName":"vishal-munday-protfolio","name":"projects/vishal-munday-protfolio","resources":{"hostingSite":"vishal-munday-protfolio"},"state":"ACTIVE","etag":"1_c29b8518-a88b-4a73-848e-9289cacad71f"}
+[info] 
+[info] === Deploying to 'vishal-munday-protfolio'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2022-09-23T12:11:04.123Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vishal-munday-protfolio [none]
+[debug] [2022-09-23T12:11:05.187Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vishal-munday-protfolio 200
+[debug] [2022-09-23T12:11:05.190Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vishal-munday-protfolio {"projectId":"vishal-munday-protfolio","projectNumber":"965337335375","displayName":"vishal-munday-protfolio","name":"projects/vishal-munday-protfolio","resources":{"hostingSite":"vishal-munday-protfolio"},"state":"ACTIVE","etag":"1_c29b8518-a88b-4a73-848e-9289cacad71f"}
+[debug] [2022-09-23T12:11:05.212Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions [none]
+[debug] [2022-09-23T12:11:05.213Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2022-09-23T12:11:07.090Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions 200
+[debug] [2022-09-23T12:11:07.091Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions {"name":"projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a","status":"CREATED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[vishal-munday-protfolio]: beginning deploy... 
+[info] i  hosting[vishal-munday-protfolio]: found 12 files in build 
+[debug] [2022-09-23T12:11:07.120Z] [hosting] uploading with 200 concurrency
+[debug] [2022-09-23T12:11:07.126Z] [hosting] hash cache [YnVpbGQ] stored for 12 files
+[debug] [2022-09-23T12:11:07.127Z] [hosting][hash queue][FINAL] {"max":2,"min":0,"avg":0,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":4}
+[debug] [2022-09-23T12:11:07.127Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a:populateFiles [none]
+[debug] [2022-09-23T12:11:07.127Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a:populateFiles {"files":{"/asset-manifest.json":"1599c52d411950db5fb55f392163217c4f4adde59639e2ebefd86bfbff8b0c72","/favicon.ico":"cc9a53613ddcb4c4bc08f2489db5b7247a669b3da6a4354b15b6fc24192ebbef","/index.html":"5617320ab9b166b8cbe3f134d36e304058c02a9ec7ff3e846de4b20d8fc162f2","/static/css/main.7a77fa39.css":"6aa857ec9f7c4c0902e2f2367da8a31a7bfd5d655e128230e2e0cef773837d7e","/static/css/main.7a77fa39.css.map":"1575e2e1a2323780d8e0f32ace5abee035e00df4ae18f86ee0d9a10a11218546","/static/js/main.211f14c0.js":"10d742a56b7c9cc942e5e43bd9181427782cc841f7ddbdc3a5997e6d12194a61","/static/js/main.211f14c0.js.LICENSE.txt":"db3efa3d5f45e74885b2034379631670a3bc235ba820536cafbbaf8473d17d7d","/static/js/main.211f14c0.js.map":"c85dd805009a0931090d8dfa2a66ef320b2cddc6257b7e077c1ac35a610e5bfd","/static/media/about.784aeb46c83f03736348.png":"a85f149cbeec585556191e9082127024ebe04ff9f38fa1770fe54dfcb3feb39e","/static/media/experience.21804cd7f29ee54ecb5f.png":"aaff5b4b45b47e3de20e45a07b0892230463cea006bceeadc551259d4d17b768","/static/media/project.8d36763635bf27a94d4e.png":"d1598165253029f009f864debe9669d8e6dfd82aa5589466012a5dcbdef0ae0b","/static/media/skills.105e74ba922c1157abf0.png":"331722f45a6d58d692eded0571d75fcacf7891a740c716c2533b7ab91529b684"}}
+[debug] [2022-09-23T12:11:13.807Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a:populateFiles 200
+[debug] [2022-09-23T12:11:13.807Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a:populateFiles {"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a/files"}
+[debug] [2022-09-23T12:11:13.808Z] [hosting][populate queue][FINAL] {"max":6683,"min":6683,"avg":6683,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":6683}
+[debug] [2022-09-23T12:11:13.809Z] [hosting] uploads queued: 0
+[debug] [2022-09-23T12:11:13.809Z] [hosting][upload queue][FINAL] {"max":0,"min":9999999999,"avg":0,"active":0,"complete":0,"success":0,"errored":0,"retried":0,"total":0,"elapsed":1663935073809}
+[info] +  hosting[vishal-munday-protfolio]: file upload complete 
+[debug] [2022-09-23T12:11:13.812Z] [hosting] deploy completed after 6713ms
+[debug] [2022-09-23T12:11:13.819Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "vishal-munday-protfolio"
+    },
+    "site": "vishal-munday-protfolio",
+    "version": "projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a"
+  }
+]
+[info] i  hosting[vishal-munday-protfolio]: finalizing version... 
+[debug] [2022-09-23T12:11:13.821Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a updateMask=status%2Cconfig
+[debug] [2022-09-23T12:11:13.821Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a {"status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]}}
+[debug] [2022-09-23T12:11:24.000Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a 200
+[debug] [2022-09-23T12:11:24.002Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a {"name":"projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-09-23T12:11:11.453226Z","createUser":{"email":"vishu.im.0007@gmail.com"},"finalizeTime":"2022-09-23T12:11:28.367930Z","finalizeUser":{"email":"vishu.im.0007@gmail.com"}}
+[debug] [2022-09-23T12:11:24.004Z] [hosting] finalized version for vishal-munday-protfolio:[object Object]
+[info] +  hosting[vishal-munday-protfolio]: version finalized 
+[info] i  hosting[vishal-munday-protfolio]: releasing new version... 
+[debug] [2022-09-23T12:11:24.010Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/releases versionName=projects%2F965337335375%2Fsites%2Fvishal-munday-protfolio%2Fversions%2F06f3a6eb5614d05a
+[debug] [2022-09-23T12:11:24.011Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/releases {"message":null}
+[debug] [2022-09-23T12:11:31.916Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/releases 200
+[debug] [2022-09-23T12:11:31.916Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/965337335375/sites/vishal-munday-protfolio/releases {"name":"projects/965337335375/sites/vishal-munday-protfolio/releases/1663935093473979","version":{"name":"projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-09-23T12:11:11.453226Z","createUser":{"email":"vishu.im.0007@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ACNPEu-ZViIsrTm3QcoUcCbJ7MlnRcFPXu72celQIalHWA"},"finalizeTime":"2022-09-23T12:11:28.367930Z","finalizeUser":{"email":"vishu.im.0007@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ACNPEu-ZViIsrTm3QcoUcCbJ7MlnRcFPXu72celQIalHWA"}},"type":"DEPLOY","releaseTime":"2022-09-23T12:11:33.473979015Z","releaseUser":{"email":"vishu.im.0007@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ACNPEu-ZViIsrTm3QcoUcCbJ7MlnRcFPXu72celQIalHWA"}}
+[debug] [2022-09-23T12:11:31.917Z] [hosting] release: {"name":"projects/965337335375/sites/vishal-munday-protfolio/releases/1663935093473979","version":{"name":"projects/965337335375/sites/vishal-munday-protfolio/versions/06f3a6eb5614d05a","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2022-09-23T12:11:11.453226Z","createUser":{"email":"vishu.im.0007@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ACNPEu-ZViIsrTm3QcoUcCbJ7MlnRcFPXu72celQIalHWA"},"finalizeTime":"2022-09-23T12:11:28.367930Z","finalizeUser":{"email":"vishu.im.0007@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ACNPEu-ZViIsrTm3QcoUcCbJ7MlnRcFPXu72celQIalHWA"}},"type":"DEPLOY","releaseTime":"2022-09-23T12:11:33.473979015Z","releaseUser":{"email":"vishu.im.0007@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a-/ACNPEu-ZViIsrTm3QcoUcCbJ7MlnRcFPXu72celQIalHWA"}}
+[info] +  hosting[vishal-munday-protfolio]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/vishal-munday-protfolio/overview
+[info] Hosting URL: https://vishal-munday-protfolio.web.app
+[debug] [2022-09-23T12:11:51.153Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\vishal\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[error] 
+[error] Error: An unexpected error has occurred.
