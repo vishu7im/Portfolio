@@ -17,7 +17,7 @@ import { Lodder } from "../../context/Lodder";
 
 export default function Home() {
   const { setLodder } = Lodder();
-  const [CV, setCV] = useState("");
+  const [CV, setCV] = useState(" ");
   const fetch = async () => {
     try {
       setLodder(true);
@@ -89,7 +89,11 @@ export default function Home() {
           </div>
         </div>
         <div className="download">
-          <a href={CV} attributes-list download="resume">
+          <a
+            href={CV === " " ? null : CV}
+            attributes-list
+            download="vishal-resume "
+          >
             <div className="CV">
               <p> Download CV</p>{" "}
             </div>

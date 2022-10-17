@@ -3,20 +3,23 @@ import { useEffect } from "react";
 import { getprofile } from "../../api/api";
 import FileBase from "react-file-base64";
 import axios from "axios";
+
 import { Lodder } from "../../../context/Lodder";
 
 export default function About() {
-  const { lodder, setLodder } = Lodder();
   const [profiledata, setprofiledata] = useState({
     img: "",
     cv: "",
   });
+
+  const { lodder, setLodder } = Lodder();
+
   const [id, setid] = useState("");
 
   const Change = async () => {
     setLodder(true);
     const { cv, img } = profiledata;
-    if (!cv && !img) {
+    if (!cv || !img) {
       alert("select fille ");
       setLodder(false);
       return;
@@ -41,6 +44,10 @@ export default function About() {
     try {
       const data = await getprofile();
       setid(data[0]._id);
+      setprofiledata({
+        img: data[0].img,
+        cv: data[0].cv,
+      });
     } catch (error) {
       console.log(error.message);
     }
