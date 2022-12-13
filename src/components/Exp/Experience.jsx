@@ -14,7 +14,7 @@ export default function Experience() {
 
     try {
       const result = await getexperience();
-      setdata(result);
+      setdata(result.reverse());
     } catch (error) {
       console.log(error);
     }
