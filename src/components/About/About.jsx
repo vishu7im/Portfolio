@@ -41,18 +41,18 @@ export default function About() {
                   </div>
                   <div className="about-content">
                     <p>
-                      Looking for a top-rated full stack Web developer with a
-                      lifelong passion for the Web? <br /> You’ve come to the
-                      “write” place! website is my day job, my hustle, and my
-                      hobby.
+                      My specialization is backend Devlopment nodejs.
                       <br />
-                      -Extensive knowledge of advanced Web Development topics,
-                      such as Backends, Databases, and React js.
-                      <br /> Basically MERN stack devlopment.
+                      I have 1 year experience in back-end development as an
+                      intern and have been coding for the past couple of years,
+                      and developed a strong skillset in Node js , API
+                      Development , MongoDB , MySQL ,PHP.
                       <br />
-                      Think I’m the perfect fit for your project? <br /> Just
-                      send me a message. Thanks for reading, and I look forward
-                      to (hopefully) working with you
+                      I am also proficient in React Js , Tailwind , API
+                      integration.
+                      <br />I have a deep understanding of how to create
+                      responsive and user-friendly webpages that are both
+                      visually appealing and easy to use
                     </p>
                   </div>
                 </div>
