@@ -9,6 +9,8 @@ import { Lodder } from "../../../context/Lodder";
 export default function About() {
   const [profiledata, setprofiledata] = useState({
     img: "",
+  });
+  const [profileCV, setprofileCv] = useState({
     cv: "",
   });
 
@@ -18,25 +20,45 @@ export default function About() {
 
   const Change = async () => {
     setLodder(true);
-    const { cv, img } = profiledata;
-    if (!cv || !img) {
+    const { img } = profiledata;
+    if (!img) {
       alert("select fille ");
       setLodder(false);
       return;
     }
     const url = `${process.env.REACT_APP_MY_API_KEY}/profile`;
     try {
-      axios.post(url, { cv, img, id });
+      axios.post(url, { img, id });
       setprofiledata({
         img: "",
-        cv: "",
       });
-      alert("update");
+      alert("update profile");
     } catch (error) {
       alert("errr");
     }
     setLodder(false);
-    fetchprofile();
+  };
+  const ChangeCv = async () => {
+    setLodder(true);
+    const { cv } = profileCV;
+    console.log(cv);
+    if (!cv) {
+      alert("select fille ");
+      setLodder(false);
+      return;
+    }
+    const url = `${process.env.REACT_APP_MY_API_KEY}/profileCv`;
+    console.log(cv);
+    try {
+      axios.post(url, { cv, id });
+      setprofileCv({
+        cv: "",
+      });
+      alert("update Cv");
+    } catch (error) {
+      alert("errr");
+    }
+    setLodder(false);
   };
 
   const fetchprofile = async () => {
@@ -44,10 +66,6 @@ export default function About() {
     try {
       const data = await getprofile();
       setid(data[0]._id);
-      setprofiledata({
-        img: data[0].img,
-        cv: data[0].cv,
-      });
     } catch (error) {
       console.log(error.message);
     }
@@ -76,7 +94,7 @@ export default function About() {
                 className={"filebase"}
                 multiple={false}
                 onDone={({ base64 }) => {
-                  setprofiledata({ ...profiledata, cv: base64 });
+                  setprofileCv({ ...profileCV, cv: base64 });
                 }}
               />
             </div>
@@ -104,7 +122,17 @@ export default function About() {
                   Change();
                 }}
               >
-                update
+                Profile
+              </button>
+              <button
+                type="button"
+                className="icon ion-md-lock btn "
+                disabled={lodder}
+                onClick={() => {
+                  ChangeCv();
+                }}
+              >
+                CV
               </button>
             </div>
           </div>
